@@ -1,0 +1,82 @@
+#summary Install BURG in ubuntu karmic/lucid
+
+Here are the steps to install BURG using PPA package from launchpad.
+
+1. Insert these lines to /etc/apt/sources.list
+
+Ubuntu Karmic:
+{{{
+deb http://ppa.launchpad.net/bean123ch/burg/ubuntu karmic main
+deb-src http://ppa.launchpad.net/bean123ch/burg/ubuntu karmic main
+}}}
+
+Ubuntu Lucid:
+{{{
+deb http://ppa.launchpad.net/bean123ch/burg/ubuntu lucid main
+deb-src http://ppa.launchpad.net/bean123ch/burg/ubuntu lucid main
+}}}
+
+And install burg and related themes using these commands:
+{{{
+sudo apt-get update
+sudo apt-get install burg burg-themes
+}}}
+
+If you want to avoid the warning about unknown signature, use these commands to import it:
+{{{
+gpg --keyserver subkeys.pgp.net --recv 55708F1EE06803C5
+gpg --export --armor 55708F1EE06803C5 | sudo apt-key add -
+}}}
+
+Then, install burg to MBR with the following command:
+{{{
+sudo burg-install "(hd0)"
+}}}
+Change hd0 if you want to install to other disk.
+
+2. Edit configuration file /etc/default/burg
+
+Uncomment GRUB_THEME option to select a theme, available theme names:
+
+ minimum proto ubuntu winter sora sora/clean sora/extended chiva refit
+
+Uncomment GRUB_FOLD to fold multiple kernel items into one.
+
+Then, use this command to generate a configure file:
+{{{
+sudo update-burg
+}}}
+
+Here are the hot-keys defined for the themes:
+
+  * e - Edit the command of current boot item
+  * t - Edit the title of current boot item
+  * c - Open a terminal window
+  * 2 - Open two terminal windows
+  * h - Display help dialog (only available in sora theme)
+  * i - Display about dialog (only available in sora theme)
+  * q - Return to old grub menu
+  * F5/ctrl-x - Finish edit
+  * F6 - Switch window in dual terminal mode
+  * F7 - List the folded boot items
+  * F8 - Toggle between graphic and text mode
+  * F9 - shutdown
+  * F10 - reboot
+  * ESC - quit from the current popup menu or dialog.
+
+3. Live preview themes in host OS
+
+You can install the optional package burg-emu:
+{{{
+sudo apt-get install burg-emu
+}}}
+
+To preview the current configuration, run this:
+{{{
+burg-emu -r host
+}}}
+
+You need to run as root if you has setup a password:
+{{{
+sudo burg-emu
+}}}
