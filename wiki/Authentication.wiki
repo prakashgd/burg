@@ -1,4 +1,4 @@
-#summary HOWTO enable password protection.
+#summary HOWTO enable password protection
 
 ==First, configure user and passwords==
 
