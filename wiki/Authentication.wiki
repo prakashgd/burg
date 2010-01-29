@@ -1,0 +1,38 @@
+#summary HOWTO enable password protection.
+
+==First, configure user and passwords==
+
+To add/edit user, use burg-adduser, for example:
+
+{{{
+sudo burg-adduser --super admin
+sudo burg-adduser user1
+}}}
+
+The --super option is used to specify super user.
+
+To remove user, use burg-deluser, for example:
+{{{
+sudo burg-deluser user1
+}}}
+
+The password is stored in /etc/default/burg-passwd.
+
+==Second, setup GRUB_USERS variable in /etc/default/burg==
+
+Here is an example:
+{{{
+GRUB_USERS="*=user2:Ubuntu=user1:Windows="
+}}}
+
+This means user1 can boot Ubuntu, no password is needed for Windows, and user2 can boot other OS besides Ubuntu and Windows. Superusers can boot any OS and use system-wide hotkeys like `c' to enter console mode.
+
+==Finally, generate burg.cfg with update-burg==
+{{{
+sudo update-burg
+}}}
+
+You can use burg-emu to check the configuration before reboot:
+{{{
+sudo burg-emu
+}}}
