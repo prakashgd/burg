@@ -22,10 +22,10 @@ The password is stored in /etc/default/burg-passwd.
 
 Here is an example:
 {{{
-GRUB_USERS="*=user2:Ubuntu=user1:Windows="
+GRUB_USERS="*=user1,user2:Ubuntu=user1:Windows="
 }}}
 
-This means user1 can boot Ubuntu, no password is needed for Windows, and user2 can boot other OS besides Ubuntu and Windows. Superusers can boot any OS and use system-wide hotkeys like `c' to enter console mode.
+This means user1 can boot Ubuntu, no password is needed for Windows, user1 and user2 can boot other OS besides Ubuntu and Windows. Superusers can boot any OS and use system-wide hotkeys like `c' to enter console mode.
 
 ==Finally, generate burg.cfg with update-burg==
 {{{
