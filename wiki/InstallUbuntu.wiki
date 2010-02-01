@@ -36,21 +36,23 @@ Change hd0 if you want to install to other disk.
 
 2. Edit configuration file /etc/default/burg
 
-Uncomment GRUB_THEME option to select a theme, available theme names:
+For the latest version, you don't need to modify /etc/default/burg at all. If you upgrade from previous version, it's recommended to change the setting of GRUB_THEME and GRUB_FOLD to:
 
- minimum proto ubuntu winter sora sora/clean sora/extended chiva refit
-
-Uncomment GRUB_FOLD to fold multiple kernel items into one.
-
-Then, use this command to generate a configure file:
 {{{
-sudo update-burg
+GRUB_THEME=saved
+GRUB_FOLD=saved
 }}}
 
-Here are the hot-keys defined for the themes:
+This allows to change theme and folding options dynamically.
 
+Here are the hot-keys defined in the boot menu:
+
+  * t - Open theme selection menu
+  * f - Toggle between folding mode
+  * n - Jump to the next item with the same class
+  * w - Jump to the next Windows item
+  * u - Jump to the next Ubuntu item
   * e - Edit the command of current boot item
-  * t - Edit the title of current boot item
   * c - Open a terminal window
   * 2 - Open two terminal windows
   * h - Display help dialog (only available in sora theme)
@@ -73,7 +75,7 @@ sudo apt-get install burg-emu
 
 To preview the current configuration, run this:
 {{{
-burg-emu -r host
+burg-emu
 }}}
 
 You need to run as root if you has setup a password:
