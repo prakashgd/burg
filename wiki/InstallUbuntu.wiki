@@ -73,12 +73,7 @@ You can install the optional package burg-emu:
 sudo apt-get install burg-emu
 }}}
 
-To preview the current configuration, run this:
-{{{
-burg-emu
-}}}
-
-You need to run as root if you has setup a password:
+To preview the current configuration, use this command:
 {{{
 sudo burg-emu
 }}}
