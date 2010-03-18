@@ -24,7 +24,7 @@ sudo apt-get install burg burg-themes
 
 If you want to avoid the warning about unknown signature, use these commands to import it:
 {{{
-gpg --keyserver subkeys.pgp.net --recv 55708F1EE06803C5
+gpg --keyserver keyserver.ubuntu.com --recv 55708F1EE06803C5
 gpg --export --armor 55708F1EE06803C5 | sudo apt-key add -
 }}}
 
@@ -66,6 +66,12 @@ Here are the hot-keys defined in the boot menu:
   * F10 - reboot
   * ESC - quit from the current popup menu or dialog.
 
+Since 20100309 version, burg also supports grub theme. To try it, set GRUB_THEME to the name of the theme file, and run update-burg. Currently only one grub theme is available in burg-themes package:
+
+{{{
+GRUB_THEME=/boot/burg/themes/debian-theme/theme.txt
+}}}
+
 3. Live preview themes in host OS
 
 You can install the optional package burg-emu:
@@ -76,4 +82,9 @@ sudo apt-get install burg-emu
 To preview the current configuration, use this command:
 {{{
 sudo burg-emu
+}}}
+
+grub theme needs to access disk directly, to preview it, you need to add -D option:
+{{{
+sudo burg-emu -D
 }}}
