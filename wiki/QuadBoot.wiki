@@ -66,15 +66,15 @@ exec tail -n +3 $0
 # This file provides an easy way to add custom menu entries.  Simply type the
 # menu entries you want to add after this comment.  Be careful not to change
 # the 'exec tail' line above.
-menuentry "Boot Snow Leopard" {
+menuentry "Boot Snow Leopard" --class macosx {
   set root=(hd0,4)
   multiboot /boot
 }
-menuentry "Boot Leopard" {
+menuentry "Boot Leopard" --class macosx {
   set root=(hd0,9)
   multiboot /boot
 }
-menuentry "Boot FreeBSD" {
+menuentry "Boot FreeBSD" --class freebsd {
   set root=(hd0,8)
   kfreebsd /boot/loader
 }
@@ -138,11 +138,11 @@ exec tail -n +3 $0
 # This file provides an easy way to add custom menu entries.  Simply type the
 # menu entries you want to add after this comment.  Be careful not to change
 # the 'exec tail' line above.
-menuentry "Boot Windows" {
+menuentry "Boot Windows" --class windows {
   set root=(hd0,2)
   chainloader +1
 }
-menuentry "Boot FreeBSD" {
+menuentry "Boot FreeBSD" --class freebsd {
   set root=(hd0,8)
   kfreebsd /boot/loader
 }
