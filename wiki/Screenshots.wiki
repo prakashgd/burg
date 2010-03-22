@@ -1,0 +1,39 @@
+#summary Screenshots for BURG themes
+
+The screen shot are captured using burg-emu. The screen resolution is set to 1024x768, the image is scaled to 512x384.
+
+  * minimal
+[http://grub4dos.sourceforge.net/minimal.png]
+
+  * chiva
+[http://grub4dos.sourceforge.net/chiva.png]
+
+  * proto
+[http://grub4dos.sourceforge.net/proto.png]
+
+  * winter
+[http://grub4dos.sourceforge.net/winter.png]
+
+  * ubuntu (showing progress bar)
+[http://grub4dos.sourceforge.net/ubuntu.png]
+
+  * ubuntu2 (showing circular progress bar)
+[http://grub4dos.sourceforge.net/ubuntu2.png]
+
+  * refit (showing folding menu)
+[http://grub4dos.sourceforge.net/refit.png]
+
+  * sora
+[http://grub4dos.sourceforge.net/sora.png]
+
+  * sora_clean (showing theme selection menu)
+[http://grub4dos.sourceforge.net/sora_clean.png]
+
+  * sora_extended (showing folding menu)
+[http://grub4dos.sourceforge.net/sora_extended.png]
+
+  * radiance
+[http://grub4dos.sourceforge.net/radiance.png]
+
+  * radiancetext (showing folding menu)
+[http://grub4dos.sourceforge.net/radiancetext.png]
