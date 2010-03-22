@@ -68,6 +68,8 @@ Here are the hot-keys defined in the boot menu:
 
 Since 20100309 version, burg also supports grub theme. To try it, set GRUB_THEME to the name of the theme file, and run update-burg. Currently only one grub theme is available in burg-themes package:
 
+Screenshots: [Screenshots]
+
 {{{
 GRUB_THEME=/boot/burg/themes/debian-theme/theme.txt
 }}}
