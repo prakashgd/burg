@@ -37,3 +37,6 @@ The screen shot are captured using burg-emu. The screen resolution is set to 102
 
   * radiancetext (showing folding menu)
 [http://grub4dos.sourceforge.net/radiancetext.png]
+  
+  * grub2 theme debian
+[http://grub4dos.sourceforge.net/debian.png]
