@@ -43,7 +43,7 @@ GRUB_THEME=saved
 GRUB_FOLD=saved
 }}}
 
-This allows to change theme and folding options dynamically.
+This allows you to change theme and folding options dynamically.
 
 Here are the hot-keys defined in the boot menu:
 
@@ -66,7 +66,7 @@ Here are the hot-keys defined in the boot menu:
   * F10 - reboot
   * ESC - quit from the current popup menu or dialog.
 
-Since 20100309 version, burg also supports grub theme. To try it, set GRUB_THEME to the name of the theme file, and run update-burg. Currently only one grub theme is available in burg-themes package:
+Since 20100309 version, burg also supports grub2 theme. To try it, set GRUB_THEME to the name of the theme file, and run update-burg. Currently only one grub2 theme is available in burg-themes package:
 
 {{{
 GRUB_THEME=/boot/burg/themes/debian-theme/theme.txt
@@ -81,7 +81,7 @@ To preview the current configuration, use this command:
 sudo burg-emu
 }}}
 
-grub theme needs to access disk directly, to preview it, you need to add -D option:
+grub2 theme needs to access disk directly, to preview it, you need to add -D option:
 {{{
 sudo burg-emu -D
 }}}
