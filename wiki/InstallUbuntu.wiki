@@ -19,7 +19,7 @@ deb-src http://ppa.launchpad.net/bean123ch/burg/ubuntu lucid main
 And install burg and related themes using these commands:
 {{{
 sudo apt-get update
-sudo apt-get install burg burg-themes
+sudo apt-get install burg
 }}}
 
 If you want to avoid the warning about unknown signature, use these commands to import it:
@@ -68,18 +68,13 @@ Here are the hot-keys defined in the boot menu:
 
 Since 20100309 version, burg also supports grub theme. To try it, set GRUB_THEME to the name of the theme file, and run update-burg. Currently only one grub theme is available in burg-themes package:
 
-Screenshots: [Screenshots]
-
 {{{
 GRUB_THEME=/boot/burg/themes/debian-theme/theme.txt
 }}}
 
-3. Live preview themes in host OS
+Screenshots: [Screenshots]
 
-You can install the optional package burg-emu:
-{{{
-sudo apt-get install burg-emu
-}}}
+3. Live preview themes in host OS
 
 To preview the current configuration, use this command:
 {{{
