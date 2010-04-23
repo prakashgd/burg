@@ -1,5 +1,5 @@
 #summary How to compile and install BURG using source code
-#labels manual,install,source,compile
+#labels burg,manual,install,compile,source
 
 = Preparation =
 
