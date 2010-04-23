@@ -34,10 +34,16 @@ In debian/ubuntu, you can use apt-get to install it:
 sudo apt-get install bzr
 }}}
 
-Now use the following command to download latest source code:
+To download source for the first time:
 {{{
-bzr pull lp:burg
+bzr branch lp:burg
 }}}
+
+To sync a previously downloaded source tree to the latest version (This should be run in the burg source directory):
+{{{
+bzr pull
+}}}
+
 
 After each update, you need to regenerate the configuration files by running this command in the burg source directory:
 {{{
