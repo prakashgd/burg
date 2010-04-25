@@ -15,7 +15,7 @@ You can add new icon for new OS class, or change an existing one. You can use th
 
 You also need to copy icons to /boot/burg/themes/custom/ directory.
 
-Here is an example to add a mew class myos:
+Here is an example to add a new OS class myos:
 
 icon_small:
 {{{
