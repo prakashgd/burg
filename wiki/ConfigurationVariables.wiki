@@ -42,6 +42,11 @@ Default: gfxterm
 
 The input and output terminal driver to use. If input and output driver is the same, you can use GRUB_TERMINAL to set them both. If they're not set, it would try to use gfxterm if video mode is available.
 
+= GRUB_FONT =
+Value: path to font file
+
+If this is not set, it will scan /boot/burg and /usr/share/burg directory for file unicode.pf2, unifont.pf2 or ascii.pf2 and use the first one found as default font file. If none is found, it will use console terminal instead of gfxterm as default.
+
 = GRUB_SERIAL_COMMAND =
 
 This variable specify the command to setup serial console.
