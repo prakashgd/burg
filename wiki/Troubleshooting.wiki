@@ -3,7 +3,7 @@
 
 = BURG fails to start after I boot into Windows =
 
-This happens mostly to Dell machines. The root cause of this issue is that some program writes information at the beginning of disk, which overwrites part of the multi-sector BURG MBR. The solution is to use the alternative install mode that uses only one sector MBR which is guarantee to be safe. 
+This happens mostly to Dell machines. The root cause of this issue is that some program writes information at the beginning of disk, which overwrites part of the multi-sector BURG MBR. The solution is to use alternative install mode that uses only one sector MBR which is guaranteed to be safe. 
 
 You can boot into rescue CD, open a rescue shell on the original root device, and use something like this to install BURG to MBR:
 {{{
