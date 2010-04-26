@@ -91,3 +91,7 @@ grub2 theme needs to access disk directly, to preview it, you need to add -D opt
 {{{
 sudo burg-emu -D
 }}}
+
+4. Troubleshooting
+
+If you encounter issue with BURG, try the tips in [Troubleshooting]
