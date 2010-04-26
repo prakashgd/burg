@@ -20,3 +20,8 @@ GRUB_LINUX16=true
 }}}
 
 Then use update-burg to generate a new burg.cfg.
+
+= My issue is not listed here, where do I ask for help =
+You can post a thread at the BURG forum:
+
+http://www.burgloader.com/bbs/
