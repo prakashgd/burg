@@ -1,6 +1,6 @@
 #summary Screenshots for BURG themes
 
-= Themes in burg-themes pacakge =
+= Themes in burg-themes package =
 
 The screen shot are captured using burg-emu. The screen resolution is set to 1024x768, the image is scaled to 512x384.
 
