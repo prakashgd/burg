@@ -1,5 +1,7 @@
 #summary Screenshots for BURG themes
 
+= Themes in burg-themes pacakge =
+
 The screen shot are captured using burg-emu. The screen resolution is set to 1024x768, the image is scaled to 512x384.
 
   * minimal
@@ -40,3 +42,9 @@ The screen shot are captured using burg-emu. The screen resolution is set to 102
   
   * grub2 theme debian
 [http://grub4dos.sourceforge.net/debian.png]
+
+= More themes =
+
+You can visit the theme section of BURG forum:
+
+http://www.burgloader.com/bbs/index.php?board=3.0
