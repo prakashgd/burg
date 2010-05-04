@@ -10,7 +10,8 @@ Themes are stored in /boot/burg/themes directory. You can modify them directly, 
 You can add new icon for new OS class, or change an existing one. You can use the following files to specify customized icons:
 
   * /boot/burg/themes/custom/icon_large - Large icons, used by refit theme.
-  * /boot/burg/themes/custom/icon_grey - Grey icons, used by sora and radiance theme.
+  * /boot/burg/themes/custom/icon_hover - Large icon for selected item, grey icon for others, used by sora and radiance theme.
+  * /boot/burg/themes/custom/icon_grey - Grey icons, used by black_and_white and coffee theme.
   * /boot/burg/themes/custom/icon_small - Small icons, used by the rest themes.
 
 You also need to copy icons to /boot/burg/themes/custom/ directory.
@@ -31,10 +32,17 @@ icon_large:
 }
 }}}
 
-icon_grey:
+icon_hover:
 {{{
 +class {
   -myos { image = "$$/grey_icon.png:$$/large_icon.png" }
+}
+}}}
+
+icon_grey:
+{{{
++class {
+  -myos { image = "$$/grey_icon.png" }
 }
 }}}
 
