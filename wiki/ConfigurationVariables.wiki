@@ -124,5 +124,5 @@ GRUB_TITLE_OVERRIDE="/dev/sda5=Windows 1:/dev/sda6=Windows 2"
 
 Similar to GRUB_TITLE_OVERRIDE, but this one change OS class. It can be used to set customized icons for selected partition.
 {{{
-GRUB_TITLE_OVERRIDE="/dev/sda5=win1:/dev/sda6=win2"
+GRUB_CLASS_OVERRIDE="/dev/sda5=win1:/dev/sda6=win2"
 }}}
