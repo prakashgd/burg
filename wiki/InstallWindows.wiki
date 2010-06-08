@@ -45,7 +45,7 @@ BOOTDIR is the path to boot files, default value /c/burg/boot.
 
 ISODIR is the path to iso root, default value /c/burg/iso.
 
-ISODIR is the path to executable, default value /c/burg/bin.
+BINDIR is the path to executable, default value /c/burg/bin.
 
 Please note that msys use /c/ to represent c:\, and use forward slash instead of backward slash.
 
