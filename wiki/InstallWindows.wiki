@@ -54,6 +54,8 @@ You can change build directory by editing this file.
 == burg_update ==
 This command update the source code in SRCDIR to the latest version in launchpad.
 
+If you run burg_update for the first time, it may be a little slow because there are lots of revision to import. A trick is to download the latest burg-bzr package from http://code.google.com/p/burg/downloads/list, extract to C:\burg, and then run burg_update. As burg-bzr package contains recent source tree, you only need to download the updates, which is much faster.
+
 == burg_compile ==
 Incremental compile source code, use OBJDIR and EOBJDIR to store object files, the binaries are copied to BINDIR.
 
