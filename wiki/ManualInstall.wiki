@@ -7,12 +7,12 @@ To compile the pc version of BURG, you need install build dependence:
 
 debian/ubuntu:
 {{{
-sudo apt-get install autoconf automake gettext bison flex gcc make ruby python
+sudo apt-get install autoconf automake bison flex make gcc ruby python gettext libfreetype6-dev
 }}}
 
 fedora:
 {{{
-sudo yum install autoconf automake gettext bison flex gcc make ruby python
+sudo yum install autoconf automake bison flex make gcc ruby python gettext-devel
 }}}
  
 The emulated version requires extra software:
