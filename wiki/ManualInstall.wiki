@@ -12,7 +12,7 @@ sudo apt-get install autoconf automake bison flex make gcc ruby python gettext l
 
 fedora:
 {{{
-sudo yum install autoconf automake bison flex make gcc ruby python gettext-devel
+sudo yum install autoconf automake bison flex make gcc ruby python gettext-devel freetype-devel
 }}}
  
 The emulated version requires extra software:
