@@ -1,5 +1,22 @@
 #summary Install BURG in ubuntu jaunty/karmic/lucid
 
+= Wubi install =
+
+If you install ubuntu using wubi, follow steps in this section. Otherwise, jump to the next section.
+
+First, download the latest burg_wubi package from the download area, and extract to C:\ubuntu\ directory.
+
+To enable graphic menu, download the latest burg-themes package from download area, and extract to C:\ubuntu\burg\ directory.
+
+Then, copy C:\ubuntu\burg\wubildr to C:\ and overwrite the old file.
+
+That's it, it will display BURG menu next time you start wubi from NT loader.
+
+To restore the original loader, just copy C:\ubuntu\winboot\wubildr to C:\.
+
+BTW, you may notice that all OS uses the unknown icon, this is because wubildr rely on /boot/grub/grub.cfg to add menu items, but grub.cfg don't have the --class option which is required to display OS icon properly. This is easy to fix. Login ubuntu, copy 10_lupin and 30_os-prober from /host/ubuntu/burg/ directory to /etc/grub.d/, then run update-grub to generate a new grub.cfg.
+
+= Normal install =
 Here are the steps to install BURG using PPA package from launchpad.
 
 1. Insert these lines to /etc/apt/sources.list
