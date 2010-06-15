@@ -1,4 +1,4 @@
-#summary Install BURG in ubuntu jaunty/karmic/lucid
+#summary Install BURG in ubuntu
 
 = Wubi install =
 
@@ -21,23 +21,12 @@ Here are the steps to install BURG using PPA package from launchpad.
 
 1. Insert these lines to /etc/apt/sources.list
 
-Jaunty (9.04):
-{{{
-deb http://ppa.launchpad.net/bean123ch/burg/ubuntu jaunty main
-deb-src http://ppa.launchpad.net/bean123ch/burg/ubuntu jaunty main
-}}}
-
-Karmic (9.10):
-{{{
-deb http://ppa.launchpad.net/bean123ch/burg/ubuntu karmic main
-deb-src http://ppa.launchpad.net/bean123ch/burg/ubuntu karmic main
-}}}
-
-Lucid (10.04):
 {{{
 deb http://ppa.launchpad.net/bean123ch/burg/ubuntu lucid main
 deb-src http://ppa.launchpad.net/bean123ch/burg/ubuntu lucid main
 }}}
+
+You should replace lucid with the correct code name. Currently the following release are supported: jaunty (9.04), karmic (9.10), lucid (10.04), maverick (10.10).
 
 And install burg and related themes using these commands:
 {{{
