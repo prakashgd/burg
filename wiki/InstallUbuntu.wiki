@@ -42,7 +42,8 @@ gpg --export --armor 55708F1EE06803C5 | sudo apt-key add -
 
 Then, install burg to MBR with the following command:
 {{{
-sudo burg-install "(hd0)"
+sudo burg-install /dev/sda
+sudo update-burg
 }}}
 Change hd0 if you want to install to other disk.
 
